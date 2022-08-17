@@ -1,0 +1,12 @@
+app: # 应用基本配置
+  env: local # 环境名称
+  port: 8888 # 服务监听端口号
+  app_name: gin-config # 应用名称
+  app_url: http://localhost # 应用域名
+database:
+  driver: mysql
+  host: 127.0.0.1
+  port: 3306
+  db: user
+  user: root
+  password: 123456
