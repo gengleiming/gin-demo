@@ -1,0 +1,15 @@
+###
+
+# curl "localhost:8080/time?create_time=1997-10-11&update_time=1997-10-11"
+GET localhost:8080/time?create_time=1997-10-11&update_time=1997-10-11
+
+###
+GET localhost:8080/time?update_time=1997-10-11
+
+###
+GET localhost:8080/time?create_time=2020-10-11&update_time=2022-10-11
+
+###
+
+
+
