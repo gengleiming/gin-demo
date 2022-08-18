@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"gin-gorm/app/controllers"
 	"gin-gorm/bootstrap"
 	"gin-gorm/global"
 	"github.com/gin-gonic/gin"
@@ -31,6 +32,9 @@ func main() {
 	r.GET("/ping", func(c *gin.Context) {
 		c.String(http.StatusOK, "pong")
 	})
+
+	// 添加用户
+	r.POST("/user/add", controllers.AddUser)
 
 	fmt.Println(global.Viper.GetString("app.env"), global.Config.App.Env)
 

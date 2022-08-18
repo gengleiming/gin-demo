@@ -1,0 +1,8 @@
+POST http://localhost:8888/user/add
+Content-type: application/json
+
+{
+  "name": "gengleiming",
+  "mobile": "12344566778",
+  "password": "123456"
+}
