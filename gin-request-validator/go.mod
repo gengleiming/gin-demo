@@ -1,4 +1,4 @@
-module gin-validator
+module gin-request-validator
 
 go 1.18
 

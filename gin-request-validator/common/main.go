@@ -14,6 +14,7 @@ type RegisterRequest struct {
 	Password   string `json:"password" binding:"required"`
 	RePassword string `json:"re_password" binding:"required,eqfield=Password"` // eqfield 代表两个字段必须相等
 	Age        uint8  `json:"age" binding:"gte=1,lte=120"`
+	Gender     string `json:"gender" binding:"oneof=female male"`
 }
 
 func main() {
